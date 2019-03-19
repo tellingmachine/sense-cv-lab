@@ -1,9 +1,9 @@
 from sense_hat import SenseHat
-sense = new SenseHat()
 
+sense = SenseHat()
 
 r = 255
 g = 255
 b = 255
 
-sense.clear((r,g,b))
+sense.clear((r, g, b))
