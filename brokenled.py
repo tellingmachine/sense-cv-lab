@@ -30,12 +30,14 @@ x = 0
 y = 0
 good_over_bad = 10
 delay = 3
+switch_delay = 1
 
 sense.clear(color)
 
 while True:
 
+    sense.clear(e)
+    time.sleep(switch_delay)
+    sense.clear(color)
     sense.set_pixel(x, y, e)
-    time.sleep(delay)
-    sense.set_pixel(x, y, color)
     time.sleep(delay)
