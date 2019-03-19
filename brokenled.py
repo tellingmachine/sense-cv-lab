@@ -1,4 +1,5 @@
 from sense_hat import SenseHat
+import time
 
 sense = SenseHat()
 sense.low_light = True
@@ -7,7 +8,13 @@ r = 255
 g = 255
 b = 255
 
-sense.gamma = reversed(sense.gamma)
-print(sense.gamma)
 
-sense.clear((0, 0, b))
+sense.clear((r, 0, b))
+
+sense.set_pixel(2, 2, [r, 0, 0])
+
+time.sleep(3)
+
+sense.set_pixel(2, 2, [r, 0, b])
+
+sense.clear((r, 0, b))
