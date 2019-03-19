@@ -7,4 +7,6 @@ r = 255
 g = 255
 b = 255
 
+print(sense.gamma)
+
 sense.clear((0, 0, b))
