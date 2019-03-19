@@ -7,6 +7,7 @@ r = 255
 g = 255
 b = 255
 
+sense.gamma = reversed(sense.gamma)
 print(sense.gamma)
 
 sense.clear((0, 0, b))
