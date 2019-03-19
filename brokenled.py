@@ -11,10 +11,8 @@ b = 255
 
 sense.clear((r, 0, b))
 
-sense.set_pixel(2, 2, [r, 0, 0])
+sense.set_pixel(2, 2, [0, 0, 0])
 
 time.sleep(3)
 
 sense.set_pixel(2, 2, [r, 0, b])
-
-sense.clear((r, 0, b))
