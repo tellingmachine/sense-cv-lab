@@ -6,4 +6,4 @@ r = 255
 g = 255
 b = 255
 
-sense.clear((r, g, b))
+sense.clear((r, 0, 0))
