@@ -1,5 +1,6 @@
 from sense_hat import SenseHat
 import time
+from random import randint
 
 sense = SenseHat()
 sense.low_light = True
@@ -31,13 +32,22 @@ y = 0
 good_over_bad = 10
 delay = 3
 switch_delay = 1
+counter = 0
 
 sense.clear(color)
 
 while True:
-
     sense.clear(e)
     time.sleep(switch_delay)
-    sense.clear(color)
-    sense.set_pixel(x, y, e)
+    if(randint(1, good_over_bad)== good_over_bad):
+        sense.clear(color)
+        x = randint(0, 9)
+        y = randint(0, 9)
+        sense.set_pixel(x, y, e)
+    else:
+        sense.clear(color)
     time.sleep(delay)
+    +counter
+
+
+
