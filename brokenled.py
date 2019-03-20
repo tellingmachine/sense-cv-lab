@@ -41,8 +41,8 @@ while True:
     time.sleep(switch_delay)
     if(randint(1, good_over_bad)== good_over_bad):
         sense.clear(color)
-        x = randint(0, 9)
-        y = randint(0, 9)
+        x = randint(0, 7)
+        y = randint(0, 7)
         sense.set_pixel(x, y, e)
     else:
         sense.clear(color)
