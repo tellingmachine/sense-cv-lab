@@ -29,7 +29,7 @@ b,i,i,v,v,i,i,b
 
 x = 0
 y = 0
-good_over_bad = 10
+good_over_bad = 2
 delay = 3
 switch_delay = 1
 counter = 0
@@ -39,13 +39,15 @@ sense.clear(color)
 while True:
     sense.clear(e)
     time.sleep(switch_delay)
-    if(randint(1, good_over_bad)== good_over_bad):
+    if(randint(1, good_over_bad) == good_over_bad):
         sense.clear(color)
         x = randint(0, 7)
         y = randint(0, 7)
         sense.set_pixel(x, y, e)
+        print('Defect at {x} and {y}'.format(x,7))
     else:
         sense.clear(color)
+        print("good")
     time.sleep(delay)
     +counter
 
