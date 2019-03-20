@@ -44,7 +44,7 @@ while True:
         x = randint(0, 7)
         y = randint(0, 7)
         sense.set_pixel(x, y, e)
-        print('Defect at {x} and {y}'.format(x,7))
+        print('Defect at {x} and {y}'.format(x,y))
     else:
         sense.clear(color)
         print("good")
